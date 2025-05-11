@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataDate - Compatibility Analysis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/datadate-unified.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DataDate</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matches.html">Matches</a></li>
+                    <li><a href="compatibility.html" class="active">Compatibility</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="data-upload.html">Upload Data</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        
+        <div style="text-align: center; margin: 40px 0;">
+            <h1 class="section-title">AI-Powered Compatibility Analysis</h1>
+            <p style="max-width: 700px; margin: 0 auto;">Our AI has analyzed your profile data to find your most compatible matches based on interests, communication style, activity patterns, and more.</p>
+        </div>
+        
+        <!-- Top Matches Section -->
+        <section class="compatibility-section">
+            <h2 style="font-size: 22px; color: var(--primary-color); margin-bottom: 20px;">
+                <i class="fas fa-star" style="margin-right: 8px;"></i>
+                Top Compatibility Matches
+            </h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Example Match Card -->
+                <div class="match-card">
+                    <div style="background: linear-gradient(to right, var(--primary-color), var(--primary-light)); color: white; padding: 20px; position: relative;">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                            <i class="fas fa-user" style="font-size: 36px; color: var(--primary-light);"></i>
+                        </div>
+                        <div style="position: absolute; top: 20px; right: 20px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">95%</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Emma Williams</h3>
+                        <p style="color: var(--light-text); font-size: 14px; margin-bottom: 10px;">Product Designer at Design Co.</p>
+                        <p style="font-size: 14px; margin-bottom: 15px;">
+                            Creative thinker with a passion for minimalist design and outdoor adventures.
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Interests</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">92%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Music Taste</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">88%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Communication</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">95%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-heart"></i>
+                                Like
+                            </button>
+                            <button class="btn btn-outline" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-card">
+                    <div style="background: linear-gradient(to right, var(--primary-color), var(--primary-light)); color: white; padding: 20px; position: relative;">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                            <i class="fas fa-user" style="font-size: 36px; color: var(--primary-light);"></i>
+                        </div>
+                        <div style="position: absolute; top: 20px; right: 20px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">88%</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Michael Chen</h3>
+                        <p style="color: var(--light-text); font-size: 14px; margin-bottom: 10px;">Software Engineer at Tech Innovation</p>
+                        <p style="font-size: 14px; margin-bottom: 15px;">
+                            Tech enthusiast who loves hiking, photography, and trying new cuisines around the city.
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Interests</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">85%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Music Taste</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">92%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Communication</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">82%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-heart"></i>
+                                Like
+                            </button>
+                            <button class="btn btn-outline" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-card">
+                    <div style="background: linear-gradient(to right, var(--primary-color), var(--primary-light)); color: white; padding: 20px; position: relative;">
+                        <div style="width: 80px; height: 80px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                            <i class="fas fa-user" style="font-size: 36px; color: var(--primary-light);"></i>
+                        </div>
+                        <div style="position: absolute; top: 20px; right: 20px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">76%</div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 18px; margin-bottom: 5px;">Sarah Johnson</h3>
+                        <p style="color: var(--light-text); font-size: 14px; margin-bottom: 10px;">Marketing Manager at Creative Agency</p>
+                        <p style="font-size: 14px; margin-bottom: 15px;">
+                            Avid traveler, coffee enthusiast, and fitness lover looking for someone to share adventures with.
+                        </p>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 15px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Interests</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">72%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Music Taste</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">65%</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 12px; color: var(--light-text);">Communication</div>
+                                <div style="font-weight: 600; color: var(--primary-color);">88%</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-heart"></i>
+                                Like
+                            </button>
+                            <button class="btn btn-outline" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                                <i class="fas fa-comment"></i>
+                                Message
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Detailed Compatibility Analysis -->
+        <section class="compatibility-section">
+            <h2 style="font-size: 22px; color: var(--primary-color); margin-bottom: 20px;">
+                <i class="fas fa-chart-bar" style="margin-right: 8px;"></i>
+                Detailed Compatibility Analysis
+            </h2>
+            
+            <div class="compatibility-details">
+                <div class="details-header">
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.3);">
+                            <i class="fas fa-user" style="font-size: 24px; color: var(--primary-light);"></i>
+                        </div>
+                        <i class="fas fa-exchange-alt"></i>
+                        <div style="width: 60px; height: 60px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; border: 2px solid rgba(255,255,255,0.3);">
+                            <i class="fas fa-user" style="font-size: 24px; color: var(--primary-light);"></i>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <h2 style="font-size: 24px; margin-bottom: 5px;">You & Emma Williams</h2>
+                        <p style="opacity: 0.8;">Exceptional compatibility based on shared interests and communication style</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; font-weight: bold; margin-bottom: 5px;">95%</div>
+                        <span style="font-size: 14px; opacity: 0.8;">Match Score</span>
+                    </div>
+                </div>
+                
+                <div class="compatibility-factors">
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-heart" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Interests</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">92%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px; margin-bottom: 15px;">
+                            You share many common interests and hobbies, creating excellent potential for shared activities.
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="interest-tag">Photography</span>
+                            <span class="interest-tag">Hiking</span>
+                            <span class="interest-tag">Travel</span>
+                            <span class="interest-tag">Coffee</span>
+                            <span class="interest-tag">Design</span>
+                        </div>
+                    </div>
+                    
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-music" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Music Taste</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">88%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px; margin-bottom: 15px;">
+                            Your music preferences align well, with shared interest in indie rock, electronica, and folk genres.
+                        </p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span class="interest-tag">Indie Rock</span>
+                            <span class="interest-tag">Electronica</span>
+                            <span class="interest-tag">Folk</span>
+                        </div>
+                    </div>
+                    
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-comments" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Communication</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">95%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px;">
+                            Your communication styles are highly compatible, suggesting comfortable and effortless conversations.
+                        </p>
+                    </div>
+                    
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-book" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Reading Habits</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">82%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px;">
+                            You both enjoy similar literature, particularly science fiction and non-fiction books.
+                        </p>
+                    </div>
+                    
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-heartbeat" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Activity Level</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">90%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px;">
+                            Your activity patterns align very well, with similar exercise frequency and daily activity levels.
+                        </p>
+                    </div>
+                    
+                    <div class="factor-card">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <i class="fas fa-shopping-bag" style="color: var(--primary-color);"></i>
+                                <span style="font-weight: 500;">Lifestyle</span>
+                            </div>
+                            <span style="font-weight: 600; color: var(--primary-color);">85%</span>
+                        </div>
+                        <p style="color: var(--secondary-color); font-size: 14px;">
+                            Your spending habits and brand preferences suggest compatible lifestyle choices.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="compatibility-chart">
+                    <canvas id="compatibilityRadarChart"></canvas>
+                </div>
+                
+                <div class="explanation-section">
+                    <h3 class="explanation-title">AI Compatibility Insights</h3>
+                    <ul class="explanation-list">
+                        <li>You have an exceptional 95% compatibility! This is a rare and promising match.</li>
+                        <li>You share many interests (92% similarity), including photography, hiking, and travel.</li>
+                        <li>Your music tastes are highly compatible (88%). You'd likely enjoy making playlists together.</li>
+                        <li>Your communication styles are highly compatible (95%), suggesting easy and comfortable conversations.</li>
+                        <li>Your activity levels and rhythms are very compatible (90%), suggesting you could enjoy physical activities together.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>DataDate</h2>
+                    <p>Where Data Drives Connection</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="matches.html">Matches</a></li>
+                        <li><a href="compatibility.html">Compatibility</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="data-upload.html">Upload Data</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataDate - Where Data Drives Connection</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Radar chart for compatibility visualization
+            const ctx = document.getElementById('compatibilityRadarChart').getContext('2d');
+            
+            const compatibilityRadarChart = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'Interests',
+                        'Music Taste',
+                        'Communication',
+                        'Reading Habits',
+                        'Activity Level',
+                        'Lifestyle'
+                    ],
+                    datasets: [{
+                        label: 'Compatibility Score',
+                        data: [92, 88, 95, 82, 90, 85],
+                        fill: true,
+                        backgroundColor: 'rgba(33, 147, 176, 0.2)',
+                        borderColor: 'rgb(33, 147, 176)',
+                        pointBackgroundColor: 'rgb(33, 147, 176)',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: 'rgb(33, 147, 176)'
+                    }]
+                },
+                options: {
+                    elements: {
+                        line: {
+                            borderWidth: 3
+                        }
+                    },
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            ticks: {
+                                stepSize: 20
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

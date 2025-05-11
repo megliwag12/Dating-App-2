@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataDate - Your Matches</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/datadate-unified.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>DataDate</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="matches.html" class="active">Matches</a></li>
+                    <li><a href="compatibility.html">Compatibility</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="data-upload.html">Upload Data</a></li>
+                    <li><a href="#" id="logout-btn">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div style="text-align: center; margin: 40px 0;">
+                <h1 class="section-title">Your Matches</h1>
+                <p style="max-width: 700px; margin: 0 auto;">Based on your data analysis, we've found these potential matches for you.</p>
+            </div>
+
+            <div style="display: flex; margin-bottom: 30px;">
+                <div style="display: flex; gap: 15px; background: white; border-radius: 10px; padding: 15px; flex-grow: 1; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <div class="tabs" style="border-bottom: none;">
+                        <div class="tab active">All Matches</div>
+                        <div class="tab">New Matches <span style="background: var(--primary-color); color: white; padding: 2px 6px; border-radius: 10px; font-size: 12px; margin-left: 5px;">3</span></div>
+                        <div class="tab">Mutual Matches</div>
+                        <div class="tab">Favorites</div>
+                    </div>
+                    <div style="margin-left: auto; position: relative;">
+                        <input type="text" placeholder="Search matches..." style="padding-right: 35px;">
+                        <i class="fas fa-search" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: var(--light-text);"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+                <!-- Match 1 -->
+                <div class="card" style="overflow: hidden;">
+                    <div style="position: relative;">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sarah" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="position: absolute; top: 15px; right: 15px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">
+                            95% Match
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; margin-bottom: 5px;">Sarah P., 29</h3>
+                        <p style="color: var(--light-text); margin-bottom: 15px;">3 miles away</p>
+                        <p style="margin-bottom: 15px;">Product Manager passionate about creating user-friendly tech solutions. Love travel, photography, and discovering new restaurants.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                            <span class="interest-tag">Technology</span>
+                            <span class="interest-tag">Travel</span>
+                            <span class="interest-tag">Photography</span>
+                            <span class="interest-tag">Food</span>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1;">View Profile</button>
+                            <button class="btn btn-outline" style="width: 48px; display: flex; align-items: center; justify-content: center;">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match 2 -->
+                <div class="card" style="overflow: hidden;">
+                    <div style="position: relative;">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Rebecca" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="position: absolute; top: 15px; right: 15px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">
+                            88% Match
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; margin-bottom: 5px;">Rebecca L., 31</h3>
+                        <p style="color: var(--light-text); margin-bottom: 15px;">5 miles away</p>
+                        <p style="margin-bottom: 15px;">UX Designer who loves yoga, hiking and indie music. Looking for someone to explore the city with.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                            <span class="interest-tag">Design</span>
+                            <span class="interest-tag">Yoga</span>
+                            <span class="interest-tag">Hiking</span>
+                            <span class="interest-tag">Music</span>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1;">View Profile</button>
+                            <button class="btn btn-outline" style="width: 48px; display: flex; align-items: center; justify-content: center;">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match 3 -->
+                <div class="card" style="overflow: hidden;">
+                    <div style="position: relative;">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="position: absolute; top: 15px; right: 15px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">
+                            85% Match
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; margin-bottom: 5px;">Emma W., 27</h3>
+                        <p style="color: var(--light-text); margin-bottom: 15px;">7 miles away</p>
+                        <p style="margin-bottom: 15px;">Software developer and coffee enthusiast. Enjoys rock climbing, reading sci-fi novels, and playing board games.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                            <span class="interest-tag">Technology</span>
+                            <span class="interest-tag">Coffee</span>
+                            <span class="interest-tag">Climbing</span>
+                            <span class="interest-tag">Books</span>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1;">View Profile</button>
+                            <button class="btn btn-outline" style="width: 48px; display: flex; align-items: center; justify-content: center;">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Match 4 -->
+                <div class="card" style="overflow: hidden;">
+                    <div style="position: relative;">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jessica" style="width: 100%; height: 300px; object-fit: cover;">
+                        <div style="position: absolute; top: 15px; right: 15px; background: white; color: var(--primary-color); font-weight: bold; padding: 5px 10px; border-radius: 20px;">
+                            82% Match
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <h3 style="font-size: 20px; margin-bottom: 5px;">Jessica M., 30</h3>
+                        <p style="color: var(--light-text); margin-bottom: 15px;">10 miles away</p>
+                        <p style="margin-bottom: 15px;">Marketing specialist who loves travel, photography and trying new restaurants. Looking for someone with similar interests.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px;">
+                            <span class="interest-tag">Marketing</span>
+                            <span class="interest-tag">Travel</span>
+                            <span class="interest-tag">Photography</span>
+                            <span class="interest-tag">Food</span>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <button class="btn btn-primary" style="flex: 1;">View Profile</button>
+                            <button class="btn btn-outline" style="width: 48px; display: flex; align-items: center; justify-content: center;">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>DataDate</h2>
+                    <p>Where Data Drives Connection</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="matches.html">Matches</a></li>
+                        <li><a href="compatibility.html">Compatibility</a></li>
+                        <li><a href="messages.html">Messages</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="data-upload.html">Upload Data</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataDate - Where Data Drives Connection</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tab switching
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Heart toggle
+            const heartButtons = document.querySelectorAll('.btn-outline');
+            heartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const heart = this.querySelector('i');
+                    if (heart.classList.contains('far')) {
+                        heart.classList.remove('far');
+                        heart.classList.add('fas');
+                        heart.style.color = '#e53e3e';
+                    } else {
+                        heart.classList.remove('fas');
+                        heart.classList.add('far');
+                        heart.style.color = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
